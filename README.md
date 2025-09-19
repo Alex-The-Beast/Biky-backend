@@ -92,10 +92,17 @@ npm install
 npm run prepare
 
 # 🌍 Setup environment
-cp .env.example .env  # Edit as needed
+touch .env # Edit as needed
 
 # 🔥 Start development
 npm run dev
+
+# 🔥 Build for production
+npm run build
+
+# 🔥 Start production server
+npm run start
+
 ```
 
 ### 🎯 One-Command Setup
