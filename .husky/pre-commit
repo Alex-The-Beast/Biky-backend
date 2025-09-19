@@ -1,4 +1,8 @@
-npm test
-npm run test:run
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run TypeScript type check (optional)
 npm run type-check
+
+# Run ESLint + Prettier on staged files
 npx lint-staged

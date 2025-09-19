@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -38,5 +38,11 @@
   },
   "imports": {
     "#*": "./src/*"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
